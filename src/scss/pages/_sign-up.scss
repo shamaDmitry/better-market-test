@@ -1,0 +1,113 @@
+.b-logo {
+  display: block;
+  width: 171px;
+  height: 94px;
+
+  &>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.b-sign-up {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  max-width: 1160px;
+  min-height: 792px;
+  border-radius: 50px;
+  background-color: #fff;
+
+  @include respond-to-max(1000) {
+    flex-direction: column;
+  }
+
+  &-logo {
+    display: flex;
+    width: 508px;
+    padding: 33px 51px;
+    flex-direction: column;
+    background-color: #084B3E;
+
+    @include respond-to-max(1000) {
+      width: 100%;
+      padding: 15px 30px;
+    }
+
+    &__description {
+      margin-top: auto;
+      font-size: 3.9rem;
+      color: #F9E2BA;
+      line-height: 4.5rem;
+
+      @include respond-to-max(1000) {
+        margin-top: 30px;
+      }
+
+      @include respond-to-max(580) {
+        
+      }
+    }
+  }
+
+  &-content {
+    padding: 55px 52px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+
+    @include respond-to-max(1000) {
+     max-width: 100%;
+     padding: 30px;
+    }
+
+    .b-header1 {
+      margin-bottom: 77px;
+    }
+
+    &__footer {
+      font-size: 14px;
+      font-weight: 600;
+      color: #BDBDBD;
+      margin-top: auto;
+
+      @include respond-to-max(1000) {
+        margin-top: 30px;
+       }
+
+      p {
+        margin: 0 0 8px;
+      }
+
+      .terms__link {
+        color: #BDBDBD;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .login__link {
+        color: #19B07E;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.w-sing-up {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/sign-up/vackground.jpg') no-repeat center;
+  background-size: cover;
+}

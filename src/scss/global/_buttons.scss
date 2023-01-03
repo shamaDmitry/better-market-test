@@ -1,0 +1,25 @@
+.b-btn {
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #232323;
+
+    &__primary {
+        color: #fff;
+        background-color: #00C38B;
+        border-color: #00C38B;
+    }
+
+    &__large {
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 24px 43px;
+    }
+
+    &__block {
+        display: block;
+        width: 100%;
+    }
+}

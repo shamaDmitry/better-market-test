@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+
+  @include respond-to-max(580) {
+   font-size: 7px;     
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  color: #232323;
+  font-size: 1rem;
+  font-family: 'Campton-Medium', sans-serif;
+}
+
+.w-app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
